@@ -3,6 +3,7 @@
 $site-width: 1200px;
 $hero-width: 1600px;
 $profile-image-width: 300px;
+$light-font: 400;
 
 $gutter: 8px;
 $gray: #333;
@@ -16,5 +17,41 @@ $medium-breakpoint: 960px;
   * {
     font-family: 'Inter', sans-serif;
     box-sizing: border-box;
+
   }
+}
+
+.nav-bar {
+  background-color: $primary-light;
+  display: flex;
+  justify-content: space-around;
+  margin-top: -10px;
+}
+
+.nav-header {
+  * {
+    font-weight: $light-font;
+  }
+
+  h3 {
+    margin-top: -15px;
+
+  }
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  margin-top: 35px;
+
+  li {
+
+    padding: 8px 15px;
+    border-radius: 3px;
+  }
+}
+
+.active-nav {
+  background-color: $primary;
+  color: $primary-light;
 }
