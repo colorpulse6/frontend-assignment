@@ -69,6 +69,10 @@ function App() {
           </p>
         </div>
       </div>
+      <footer className="page-footer">
+      <p>&copy; 2020 Travelize</p>
+      <p>Privacy Poilic Terms and conditions</p>
+      </footer>
     </div>
   );
 }
