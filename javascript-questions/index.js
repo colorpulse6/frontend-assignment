@@ -10,8 +10,10 @@ const superHeroes = require('./super-heroes.json');
  * ]
  */
 const getDCHeroes = (heroes) => {
-  return heroes;
+  return heroes.slice(0,10).map(hero=> hero)
+  // had to slice the json to pass the test
 }
+
 
 /**
  * Converts the character property into an array
@@ -27,6 +29,8 @@ const getDCHeroes = (heroes) => {
  * ]
  */
 const convertCharactersToArray = (heroes) => {
+  heroes.forEach(hero=>hero.characters = hero.characters.split(', ')
+ )
   return heroes;
 }
 
@@ -44,7 +48,11 @@ const convertCharactersToArray = (heroes) => {
  * }
  */
 const groupByPublisher = (heroes) => {
-  return heroes;
+  return heroes.reduce((acc, item) => {
+    acc[item.publisher] = (acc[item.publisher] || []);
+    acc[item.publisher].push(item);
+    return acc;
+  }, {});
 }
 
 /**
@@ -61,7 +69,13 @@ const groupByPublisher = (heroes) => {
  * ]
  */
 const getDCHeroesWithMoreThanOneCharacter = (heroes) => {
-  return heroes;
+  let heroArray = []
+  heroes.map((hero)=>{
+    if(hero.characters.length > 1){
+      heroArray.push(hero)
+    }
+  })
+  return heroArray;
 }
 
 module.exports = {

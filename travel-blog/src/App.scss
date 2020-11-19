@@ -3,7 +3,7 @@
 $site-width: 1200px;
 $hero-width: 1600px;
 $profile-image-width: 300px;
-$light-font: 500;
+$medium-font: 500;
 
 $gutter: 8px;
 $gray: #333;
@@ -17,7 +17,6 @@ $medium-breakpoint: 960px;
   * {
     font-family: 'Inter', sans-serif;
     box-sizing: border-box;
-
   }
 }
 
@@ -32,12 +31,11 @@ $medium-breakpoint: 960px;
 
 .nav-header {
   * {
-    font-weight: $light-font;
+    font-weight: $medium-font;
   }
 
   h3 {
     margin-top: -15px;
-
   }
 }
 
@@ -45,9 +43,9 @@ $medium-breakpoint: 960px;
   list-style: none;
   display: flex;
   margin-top: 35px;
-  color:$gray;
-  li {
+  color: $gray;
 
+  li {
     padding: 8px 15px;
     border-radius: 3px;
   }
@@ -69,21 +67,17 @@ $medium-breakpoint: 960px;
   display: flex;
   margin: 80px;
   padding: 0px 150px;
-
-
 }
 
 .profile-image {
   width: $profile-image-width;
   border-radius: 50%;
   margin-right: 30px;
-
 }
 
 .page-text {
   display: flex;
   flex-direction: column;
-  // padding-right:150px;
 }
 
 .page-footer {
@@ -92,3 +86,5 @@ $medium-breakpoint: 960px;
   background-color: $primary;
   color: $primary-light
 }
+
+
