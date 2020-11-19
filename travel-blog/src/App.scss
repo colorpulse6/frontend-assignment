@@ -21,6 +21,8 @@ $medium-breakpoint: 960px;
   }
 }
 
+
+
 .nav-bar {
   background-color: $primary-light;
   display: flex;
@@ -55,3 +57,32 @@ $medium-breakpoint: 960px;
   background-color: $primary;
   color: $primary-light;
 }
+
+.hero {
+  width: $site-width;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.page-content {
+  display: flex;
+margin:80px;
+padding:0px 150px;
+
+
+}
+
+.profile-image {
+  width: $profile-image-width;
+  border-radius: 50%;
+  margin-right:30px;
+
+}
+
+.page-text {
+  display:flex;
+  flex-direction: column;
+  // padding-right:150px;
+}
+
